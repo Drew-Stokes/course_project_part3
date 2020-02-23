@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Reponsive Navigation Menu</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="css/sm-core-css.css" rel="stylesheet">
+<link href="css/sm-simple.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+            {$ul.slideDown(250, complete);},
+        hideFunction: function($ul, complete)
+            { $ul.slideUp(250, complete);}
+    });
+}); // end ready
+</script>
+
+
+
+</head>
+<body>
+<div class="wrapper">
+  <header>
+      <h1>Selection Menu</h1>
+    <ul class ="sm sm-simple">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Driving</a></li>
+                <li><a href="#">Hours</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Product</a>
+
+        <ul>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="#">Platform Games</a></li>
+            <li><a href="colorgame.html">Other Games</a></li>
+        </ul>
+    </li>
+        <li><a href="#">Services</a>
+
+        <ul>
+            <li><a href="index.html">Design</a></li>
+            <li><a href="rsvp.html">Marketing</a></li>
+        </ul>
+    </li>
+    </ul>
+  </header>
+  
+</div>
+</body>
+</html>
