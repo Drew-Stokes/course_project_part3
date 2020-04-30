@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gamers Choice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/form.js" type="text/javascript"></script>
+    <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <link href="css/sm-core-css.css" rel="stylesheet">
+    <link href="css/sm-simple.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body> 
+    <header id="top" class="contact-header">
+      <span class="title">Contact</span>
+      <h1>Play Your Way</h1>
+      <img class="arrow" src="img/arrow.svg" alt="Down arrow">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+            {$ul.slideDown(250, complete);},
+        hideFunction: function($ul, complete)
+            { $ul.slideUp(250, complete);}
+    });
+}); // end ready
+</script>
+    </header>
+    <ul class ="sm sm-simple">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a>
+            <ul>
+                <li><a href="index.html">Our Passion</a></li>
+                <li><a href="favorite.html">Gaming News sources</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Product</a>
+
+        <ul>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="#">Platform Games</a></li>
+            <li><a href="">Other Games</a></li>
+        </ul>
+    </li>
+        <li><a href="#">Services</a>
+
+        <ul>
+            <li><a href="">Design</a></li>
+            <li><a href="">Marketing</a></li>
+        </ul>
+    </li>
+    </ul>
+		<div class="primary-content t-border">
+			<p class="intro">
+                    <div class="form">
+                        <form name="form1" id="form1" action="" method="post">
+                
+                            <label>What is your name?
+                                <input type="text" id="name" name="name">
+                            </label>
+                            <br> <!-- new line here -->
+                            <label>Your favorite gaming genre? &nbsp;
+                                <input type="text" id="genre" name="gaming-genre">
+                            </label>
+                            <br> <!-- new line here -->
+                            <span>What is your favorite gaming platorm?</span>
+                            <br>
+                            <input type="radio" name="answer" 
+                            value="nintendo switch">nintendo switch<br>
+                            <input type="radio" name="answer" 
+                            value="playstation">playstation<br>
+                            <input type="radio" name="answer" 
+                            value="xbox">Xbox<br>
+                            <input type="radio" name="answer" 
+                            value="pc">PC<br>
+                            <input id='submit-button' type="button" value="Submit" onclick="validateForm();"> &nbsp; &nbsp; <input type="reset" value="Clear Form">
+                        </form>
+                        <div id="results"></div>
+                        <div id="more"></div>
+                </div>
+			</p>
+			<a class="callout" href="#more">Find out more</a>
+      </div>
+      </body>
+</html>
+      

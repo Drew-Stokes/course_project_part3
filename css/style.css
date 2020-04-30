@@ -53,19 +53,19 @@
     border-radius: 10px;
   }
 
-  ul,
-  ol {
+  .unordered-li,
+  .ordered-li {
       margin: 30px 0;
   }
 
-  li {
+  .list {
       margin-bottom: 10px;
   }
   
   /* Pseudo-classes ------------------ */
   
   a:link {
-    color: rgb(255, 169, 73);
+    color:#00CED1;
     text-decoration: none;
   }
   
@@ -86,15 +86,17 @@
   .main-header {
     padding-top: 170px;
     height: 850px;
-    /*
-    background-color: #ffa949;
-    background-image: url("../img/mountains.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    */
-    background: linear-gradient(#ffa949, transparent 90%),
-    #ffa949 url("../img/mountains.jpg") no-repeat center /cover;
+    background: linear-gradient(#00CED1, transparent 90%),
+    #00CED1 url("../img/shutterstock_329959085.jpg") no-repeat center /cover;
+    box-shadow: 0 0 15px #aaa;
+
+  }
+
+  .contact-header {
+    padding-top: 170px;
+    height: 850px;
+    background: linear-gradient(#00CED1, transparent 90%),
+    #00CED1 url("../img/shutterstock_1161055600.jpg") no-repeat center /cover;
     box-shadow: 0 0 15px #aaa;
 
   }
@@ -102,7 +104,7 @@
   .title {
     color: white;
     font-size: 1.625rem; /* 26px/16px */
-    text-shadow: 1px 3px 0 #e59740;
+    text-shadow: 1px 3px 0 #00CED1;
     letter-spacing:.065em;
     font-weight: 200;
     border-bottom: 2px solid;
@@ -116,7 +118,8 @@
   
   .primary-content,
   .main-header,
-  .main-footer {
+  .main-footer,
+  .contact-header {
     text-align: center;
   }
   
@@ -142,11 +145,11 @@
   .main-footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    border-bottom: 10px solid #ffa949;
+    border-bottom: 10px solid #00CED1;
   }
   
   .t-border {
-    border-top: 2px solid #dfe2e6;
+    border-top: 2px solid #00CED1;
   }
   
   /* Layout Styles ------------------ */
@@ -164,15 +167,32 @@
     color: white;
     background-color: #434a52;
     padding: 18% 24%;
-    border-top: 10px solid #ffa949;
+    border-top: 10px solid #00CED1;
     margin: 105px 0 60px;
-    background-image: url('../img/bear.jpg');
+    background-image: url('../img/shutterstock_705666280.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
     box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
     border-radius: 10px;
+    display: ;
+  }
+
+  .wildlife2 {
+    color: white;
+    background-color: #434a52;
+    padding: 18% 24%;
+    border-top: 10px solid #00CED1;
+    margin: 105px 0 60px;
+    background-image: url('../img/shutterstock_1038561868.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
+    border-radius: 10px;
+    display: none;
   }
   
   .arrow {

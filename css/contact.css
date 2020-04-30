@@ -1,0 +1,12 @@
+.contact-header {
+    padding-top: 170px;
+    height: 850px;
+    background: linear-gradient(#00CED1, transparent 90%),
+    #00CED1 url("../img/shutterstock_1161055600.jpg") no-repeat center /cover;
+    box-shadow: 0 0 15px #aaa;
+
+  }
+
+  .form {
+      border-style: solid 4px  #00CED1;
+  }

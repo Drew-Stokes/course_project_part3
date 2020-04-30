@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lake Tahoe</title>
+    <title>Gamers Choice</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="css/sm-core-css.css" rel="stylesheet">
+  <link href="css/sm-simple.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width">
   </head>
   <body> 
     <header id="top" class="main-header">
-      <span class="title">Journey Through the Sierra Nevada Mountains</span>
-      <h1>Lake Tahoe, California</h1>
+      <span class="title">Gamers Choice</span>
+      <h1>Play Your Way</h1>
       <img class="arrow" src="img/arrow.svg" alt="Down arrow">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.sm').smartmenus(
+    {
+        showFunction: function($ul, complete)
+            {$ul.slideDown(250, complete);},
+        hideFunction: function($ul, complete)
+            { $ul.slideUp(250, complete);}
+    });
+}); // end ready
+</script>
     </header>
-    
+    <ul class ="sm sm-simple">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a>
+            <ul>
+                <li><a href="#">Our History</a></li>
+                <li><a href="#">Driving</a></li>
+                <li><a href="#">Hours</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Product</a>
+
+        <ul>
+            <li><a href="gallery.html">gallery</a></li>
+            <li><a href="#">Platform Games</a></li>
+            <li><a href="">Other Games</a></li>
+        </ul>
+    </li>
+        <li><a href="#">Services</a>
+
+        <ul>
+            <li><a href="">Design</a></li>
+            <li><a href="">Marketing</a></li>
+        </ul>
+    </li>
+    </ul>
 		<div class="primary-content t-border">
 			<p class="intro">
-				Lake Tahoe is one of the most breathtaking attractions located in California. It's home to a number of ski resorts, summer outdoor recreation, and tourist attractions. Snow and skiing are a significant part of the area's reputation.
+			Gaming has become an intergral part of todays world wide modern culture. With so many options available to us many gamers have chosen there prefered platform. However many have not, and that is where we come in. We hare to give you all the details you need to make the perfect choice for your self.
 			</p>
 			<a class="callout" href="#more">Find out more</a>
       
       <div class="wildlife">
-        <h2>Check out all the Wildlife</h2>
-        <p>
-          As spawning season approaches, the fish acquire a humpback and protuberant jaw. After spawning, they die and their carcasses provide a feast for gatherings of <a href="#mink">mink</a>, <a href="#bears">bears</a>, and <a href="#eagles">bald eagles</a>.
-        </p>
+        <h2 style="color:rgb(145, 107, 170)">You chose pc! Ultimate coustomization and power</h2>
+      </div><!-- End .wildlife -->
+
+      <div class="wildlife2">
+        <h2 style="color:rgb(145, 107, 170)">You chose console! Ease of use and Exclusives!</h2>
       </div><!-- End .wildlife -->
       
-			<a class="callout" href="#wildlife">See the Wildlife</a>
+			<a class="callout" href="#wildlife">Your Choices!</a>
 		</div><!-- End .primary-content -->
 
 		<div class="secondary-content t-border group"> 
       <div class="resorts">
-        <img src="img/resort.jpg" alt="Resort">
-        <h3>From Tents to Resorts</h3>
+        <img src="img/shutterstock_670592221.jpg" alt="Resort">
+        <h3>Console Gaming</h3>
         <p>
-          Lake Tahoe is full of wonderful places to stay. You have the ability to sleep in the outdoors in a tent, or relax like a king at a five star resort. Here are our top three resorts:
+          Plug and Play!
         </p>
-        <ul>
-          <li><a href="#hotels">Lake Tahoe Resort Hotel</a></li>
-          <li><a href="#resorts">South Lake Tahoe Resorts</a></li>
-          <li><a href="#lodging">Tahoe Ski Resort Lodging</a></li>
+        <ul class="unordered-li">
+          <li class="list"><a href="#hotels">Consoles are usually the cheaper option</a></li>
+          <li class="list"><a href="#resorts">First party exclusives from Nintendo, Playstation, and Xbox</a></li>
+          <li class="list"><a href="#lodging">Good old fashioned co-op play with the ones closest to you</a></li>
         </ul>		
       </div>
       
       <div class="tips">
-        <img src="img/mtn-landscape.jpg" alt="Mountain Landscape">
-        <h3>Pack Accordingly</h3>
+        <img src="img/shutterstock_1692414103.jpg" alt="Mountain Landscape">
+        <h3>PC Gaming</h3>
         <p>
-          One of most important things when it comes to traveling through the great outdoors is packing accordingly. Here are a few tips:
+          Power Users!
         </p>
-        <ol>
-          <li>Bring layers of clothing</li>
-          <li>Pack sunscreen</li>
-          <li>Carry extra water just in case</li>
-          <li>Pack light</li>
+        <ol class="ordered-li">
+          <li class="list">coustomization! Build your PC your way</li>
+          <li class="list">Modding your favorite video games</li>
+          <li class="list">Many places to purchase your games</li>
+          <li class="list">Constant invotion for hardware and software</li>
         </ol>
       </div>
 		</div><!-- End .secondary-content -->
